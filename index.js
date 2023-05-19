@@ -7,8 +7,17 @@ function increment() {
    
 }
 
+function decrement() {
+    count = count - 1
+    countEl.innerText = count;
+}
+
 function save() {
     let countStr = count
     
     entBtn.textContent += " -" + countStr
+
+    count = 0;
+    countEl.innerText = count;
+
 }
